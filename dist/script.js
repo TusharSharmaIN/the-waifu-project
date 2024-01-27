@@ -88,24 +88,10 @@ function getImagesData(tag, isNSFW) {
 function loadImage(imgUrl) {
   const imageElement = document.createElement("img");
   imageElement.src = imgUrl;
-  imageElement.classList.add(
-    "w-full",
-    "rounded-md",
-    "data-te-lazy-src",
-    "data-te-lazy-load-init"
-  );
+  imageElement.classList.add("rounded-md");
 
   const wrapper = document.createElement("div");
-  wrapper.classList.add(
-    "relative",
-    "mb-4",
-    "before:content-['']",
-    "before:rounded-md",
-    "before:absolute",
-    "before:inset-0",
-    "before:bg-black",
-    "before:bg-opacity-20"
-  );
+  wrapper.classList.add("mb-4");
   wrapper.appendChild(imageElement);
 
   const gallery = document.querySelector("#image-gallery");
