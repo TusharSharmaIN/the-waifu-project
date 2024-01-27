@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Project Waifu!</title>
+  <link rel="icon" href="https://fav.farm/🔥" />
+
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <link rel="stylesheet" href="style-min.css">
+</head>
+
+<body class="bg-white p-8">
+
+  <div class="flex flex-wrap flex-row justify-around">
+    <select id="tag-type"
+      class="min-w-60 mb-8 bg-white block text-l px-4 py-2 placeholder:text-gray-400 outline-dashed rounded-md">
+      <option value="" disabled selected>select a type</option>
+    </select>
+
+    <select id="tag-category"
+      class="min-w-60 mb-8 bg-white block text-l px-4 py-2 placeholder:text-gray-400 outline-dashed rounded-md">
+      <option value="" disabled selected>select a category</option>
+    </select>
+  </div>
+
+  <div id="image-gallery" class="columns-2 md:columns-3 lg:columns-4">
+  </div>
+
+  <div class="flex justify-center content-center mt-4">
+    <button id="view-more" class="hidden text-sm border outline-dashed rounded-md p-1">more
+      👇</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
