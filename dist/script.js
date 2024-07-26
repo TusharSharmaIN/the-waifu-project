@@ -56,7 +56,7 @@ function getImagesData(tag, isNSFW) {
   const params = {
     included_tags: tag,
     byte_size: "<=1000000",
-    many: "true",
+    limit: 30,
     is_nsfw: isNSFW,
   };
 
