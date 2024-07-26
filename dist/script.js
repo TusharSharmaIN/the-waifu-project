@@ -42,9 +42,13 @@ function creatCategory(category) {
   tagsCategory.appendChild(option);
 }
 
-function loadCategories(type, categories) {
+function loadCategories(categories) {
   const tagsCategory = document.querySelector("#tag-category");
   tagsCategory.innerHTML = "";
+  const option = document.createElement("option");
+  option.value = "select a category";
+  option.innerHTML = "select a category";
+  tagsCategory.appendChild(option);
 
   categories.forEach((category) => {
     creatCategory(category);
@@ -56,7 +60,7 @@ function getImagesData(tag, isNSFW) {
   const params = {
     included_tags: tag,
     byte_size: "<=1000000",
-    many: "true",
+    limit: 30,
     is_nsfw: isNSFW,
   };
 
@@ -118,7 +122,7 @@ const viewMore = document.querySelector("#view-more");
 tagType.addEventListener("change", (e) => {
   const type = e.target.value;
   if (type) {
-    loadCategories(type, tagData[type]);
+    loadCategories(tagData[type]);
   }
 
   isNSFW = type === "nsfw";

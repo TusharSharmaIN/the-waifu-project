@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="dark">
 
 <head>
   <meta charset="UTF-8">
@@ -7,20 +7,21 @@
   <title>Project Waifu!</title>
   <link rel="icon" href="https://fav.farm/🔥" />
 
-  <!-- <link rel="stylesheet" href="style.css"> -->
-  <link rel="stylesheet" href="style-min.css">
+  <link rel="stylesheet" href="style.css">
+  <!-- <link rel="stylesheet" href="style-min.css"> -->
+  <script src="spaghetti.js"></script>
 </head>
 
-<body class="bg-white p-8">
+<body class="bg-white dark:bg-slate-900 p-8">
 
   <div class="flex flex-wrap flex-row justify-around">
     <select id="tag-type"
-      class="min-w-60 mb-8 bg-white block text-l px-4 py-2 placeholder:text-gray-400 outline-dashed rounded-md">
+      class="min-w-60 mb-8 bg-white dark:bg-slate-900 block text-l px-4 py-2 dark:text-slate-50 placeholder:text-gray-400 dark:placeholder:text-slate-50 outline-dashed rounded-md">
       <option value="" disabled selected>select a type</option>
     </select>
 
     <select id="tag-category"
-      class="min-w-60 mb-8 bg-white block text-l px-4 py-2 placeholder:text-gray-400 outline-dashed rounded-md">
+      class="min-w-60 mb-8 bg-white dark:bg-slate-900 block text-l px-4 py-2 dark:text-slate-50 placeholder:text-gray-400 dark:placeholder:text-slate-50 outline-dashed rounded-md">
       <option value="" disabled selected>select a category</option>
     </select>
   </div>
